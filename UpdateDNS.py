@@ -3,8 +3,8 @@ import certifi
 from requests import get
 import xmltodict
 
-domain = "imparare.com"
-APIKEY="b1f234kb5748234a9d17f7b2c76f4"  #4 Namecheap DDNS Token (Accounts > Domain List > Advanced DNS)
+domain = "imparare.com"  #Here you must to specify the domain
+APIKEY="b1f234kb5748234a9d17f7b2c76f4"  #Here you need to put your Token Secret (Namecheap DDNS Token (Accounts > Domain List > Advanced DNS))
 
 def getIP():
     ip = get('https://api.ipify.org').content.decode('utf8')
